@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Run a C program, represented by $CFILE, through the preprocessor without compiling.
+
+gcc -E $CFILE -o c
