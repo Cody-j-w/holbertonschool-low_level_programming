@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
+/**
+ * main - entrypoint for program
+ * Description: takes a randomly generated number, finds the last digit,
+ * and determines whether that digit is greater than 5, between 6 and 0, or 0
+ * Return: 0 (always success)
+ *
+ */
+int main(void)
+{
+	int n;
+	int last;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last = n % 10;
+	if (last > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	else if (last == 0)
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	else
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+
+	return (0);
+}
