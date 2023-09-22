@@ -2,19 +2,12 @@
 
 /**
  *
- * main - entrypoint of program
+ * print_alphabet - prints alphabet
  *
  * Description: prints alphabet
  *
  * Return: Always 0.
  */
-
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
 
 void print_alphabet(void)
 	{
