@@ -15,8 +15,14 @@ void jack_bauer(void)
 	int m_o;
 	for (h_t = 0 ; h_t <= 2 ; h_t++)
 	{
-		for (h_o = 0 ; h_o <=3 ; h_o++)
+		for (h_o = 0 ; h_o <= 9	; h_o++)
 		{
+			if (h_t == 2 && h_m == 4)
+			{
+				break;
+			}
+			else
+			{
 			for (m_t = 0 ; m_t < 6 ; m_t++)
 			{
 				for(m_o = 0 ; m_o <= 9 ; m_o++)
@@ -28,6 +34,7 @@ void jack_bauer(void)
 					_putchar(m_o + '0');
 					_putchar('\n');
 				}
+			}
 			}
 		}
 	}
