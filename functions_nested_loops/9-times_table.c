@@ -25,6 +25,8 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if (sum < 10 )
+					_putchar(' ');
 			}
 			
 			if (sum > 9)
