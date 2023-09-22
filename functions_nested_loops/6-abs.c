@@ -11,5 +11,5 @@
 
 int _abs(int n)
 {
-	return (n *((n > 0) - (n < 0)));
+	return (n * ((n > 0) - (n < 0)));
 }
