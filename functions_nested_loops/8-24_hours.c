@@ -10,9 +10,13 @@
 void jack_bauer(void)
 {
 	int h_t;
+
 	int h_o;
+
 	int m_t;
+
 	int m_o;
+
 	for (h_t = 0 ; h_t <= 2 ; h_t++)
 	{
 		for (h_o = 0 ; h_o <= 9	; h_o++)
@@ -25,7 +29,7 @@ void jack_bauer(void)
 			{
 			for (m_t = 0 ; m_t < 6 ; m_t++)
 			{
-				for(m_o = 0 ; m_o <= 9 ; m_o++)
+				for (m_o = 0 ; m_o <= 9 ; m_o++)
 				{
 					_putchar(h_t + '0');
 					_putchar(h_o + '0');
