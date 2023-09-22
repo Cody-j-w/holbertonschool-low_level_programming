@@ -11,7 +11,7 @@
  * Return: a boolean - 1 if the supplied character is lower case, 0 if upper.
  */
 
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (0);
