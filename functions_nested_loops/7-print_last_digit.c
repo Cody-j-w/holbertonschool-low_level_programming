@@ -10,14 +10,14 @@
 
 int print_last_digit(int n)
 {
-	if (n == INT_MIN)
+	if (n == -2147483648)
 	{
-		_putchar ('8');
+		_putchar('8');
 		return (8);
 	}
 	else
 	{
-	int absolute_value = n * ((n > 0) - (n < 0));
+	int absolute_value = n * ((n > 0) - (n <= 0));
 
 	int last_digit = (absolute_value % 10);
 
