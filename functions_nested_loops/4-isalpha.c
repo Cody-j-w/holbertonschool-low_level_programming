@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - determines whether a character is a letter or not.
- * @parameter c: a single character.
+ * @c: a single character.
  *
  * Description: Uses an if statement to compare parameter c against ASCII
  * values and determine whether or not it is a letter.
