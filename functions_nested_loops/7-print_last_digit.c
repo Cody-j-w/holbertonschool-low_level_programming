@@ -10,10 +10,19 @@
 
 int print_last_digit(int n)
 {
+	if (n == INT_MIN)
+	{
+		_putchar ('8');
+		return (8);
+	}
+	else
+	{
+	int absolute_value = n * ((n > 0) - (n < 0));
 
-	int last_digit = (n % 10);
+	int last_digit = (absolute_value % 10);
 
 	_putchar('0' + last_digit);
 
 	return (last_digit);
+	}
 }
