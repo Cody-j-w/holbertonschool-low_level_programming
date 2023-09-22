@@ -6,7 +6,7 @@
  * Description: uses nested for loops to iterate over the alphabet ten times
  */
 
-void print_alphabet_X10(void)
+void print_alphabet_x10(void)
 	{
 		int i;
 		int j;
