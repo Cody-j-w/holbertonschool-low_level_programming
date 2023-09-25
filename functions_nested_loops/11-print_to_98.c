@@ -9,39 +9,30 @@
 
 void print_to_98(int n)
 {
-	if (n == 98)
-	{
-		_putchar(9 + '0');
-		_putchar(8 + '0');
-	}
-	else
+	while (n != 98)
 	{
 		int abs = n * ((n > 0) - (n <= 0));
+		if (n < 0)
+			_putchar('-');
 
-		while (abs != 98)
+		if (abs > 99)
 		{
-			if (abs < 0)
-				_putchar('-');
-
-			if (abs > 99 || abs < -99)
-			{
-				_putchar(abs / 100 + '0');
-				_putchar((abs / 10) % 10 + '0');
-			}
-			else if (abs > 9 || abs < -9)
-			{
-				_putchar(abs / 10 + '0');
-			}
-			_putchar(abs % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
-			if (abs > 98)
-				abs--;
-			else
-				abs++;
+			_putchar(abs / 100 + '0');
+			_putchar((abs / 10) % 10 + '0');
 		}
-		_putchar(9 + '0');
-		_putchar(8 + '0');
-		_putchar('\n');
+		else if (abs > 9)
+		{
+			_putchar(abs / 10 + '0');
+		}
+		_putchar(abs % 10 + '0');
+		_putchar(',');
+		_putchar(' ');
+		if (abs > 98)
+			abs--;
+		else
+			abs++;
 	}
+	_putchar(9 + '0');
+	_putchar(8 + '0');
+	_putchar('\n');
 }
