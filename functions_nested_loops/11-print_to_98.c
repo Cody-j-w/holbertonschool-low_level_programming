@@ -27,10 +27,10 @@ void print_to_98(int n)
 		_putchar(abs % 10 + '0');
 		_putchar(',');
 		_putchar(' ');
-		if (abs > 98)
-			abs--;
+		if (n > 98)
+			n--;
 		else
-			abs++;
+			n++;
 	}
 	_putchar(9 + '0');
 	_putchar(8 + '0');
