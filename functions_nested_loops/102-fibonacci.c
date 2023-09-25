@@ -15,7 +15,7 @@ int main(void)
 	long fib_prev = 1;
 
 	long holder;
-	
+
 	int count = 1;
 
 	while (count < 50)
@@ -38,5 +38,6 @@ int main(void)
 		fib_prev = holder;
 		count++;
 	}
+	printf("\n");
 	return (0);
 }
