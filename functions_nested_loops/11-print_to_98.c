@@ -29,10 +29,8 @@ void print_to_98(int n)
 		_putchar(' ');
 		if (n > 98)
 			n--;
-			abs--;
 		else
 			n++;
-			abs++;
 	}
 	_putchar(9 + '0');
 	_putchar(8 + '0');
