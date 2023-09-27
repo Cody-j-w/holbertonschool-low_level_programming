@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_more_numbers - print all numbers from 0 to 14, 10 times
+ * more_numbers - print all numbers from 0 to 14, 10 times
  */
 
-void print_more_numbers(void)
+void more_numbers(void)
 {
 	int i;
 
