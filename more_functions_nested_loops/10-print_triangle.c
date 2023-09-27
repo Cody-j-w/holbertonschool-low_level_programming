@@ -2,14 +2,14 @@
 
 /**
  * print_triangle - prints a triangle of variable size
- * 
+ *
  * @n: the integer that determines the dimensions of the triangle
  */
 
 void print_triangle(int n)
 {
 	int i;
-	
+
 	int j;
 
 	int k;
