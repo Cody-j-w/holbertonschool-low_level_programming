@@ -12,7 +12,7 @@ void print_array(int *arr, int count)
 {
 	int i;
 
-	for(i = 0; i < count ; i++)
+	for (i = 0; i < count ; i++)
 	{
 		if (i > 0)
 			printf(", ");
