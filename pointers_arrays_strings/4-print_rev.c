@@ -12,12 +12,14 @@ void print_rev(char *str)
 
 	int i = 0;
 
+	int end;
+
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 
-	int end = i - 1;
+	end = i -1;
 
 	for (j = end ; j >= 0 ; j--)
 	{
