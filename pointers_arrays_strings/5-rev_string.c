@@ -8,27 +8,48 @@
 
 void rev_string(char *str)
 {
-	int j;
+	char *start = str;
 
-	int i = 0;
+	char *end = str;
 
-	int end;
+	char temp;
 
-	char holder[100];
+	int i;
+
+	int length = _strlen(str);
 
 
-	while (str[i] != '\0')
+	for (i = 0 ; i < length - 1 ; i++)
 	{
-		i++;
-		holder[i] = str[i];
+		end++;
 	}
-	end = i;
 
-	i = 0;
-
-	for (j = end ; j >= 0 ; j--)
+	for (i = 0 ; i < length / 2 ; i++)
 	{
-		*str[i] = holder[j];
-		i++;	
+		temp = *end;
+		*end = *start;
+		*start = temp;
+
+		start++;
+		end--;
 	}
 }
+
+/**
+ * _strlen - determines the length of a string.
+ * @s: a pointer to the string whose length will be determined
+ *
+ * Return: the length of the provided string as an integer
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
