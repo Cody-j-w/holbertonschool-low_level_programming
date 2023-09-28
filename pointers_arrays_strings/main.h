@@ -11,4 +11,6 @@ int _strlen(char*);
 
 void _puts(char*);
 
+void print_rev(char*);
+
 #endif
