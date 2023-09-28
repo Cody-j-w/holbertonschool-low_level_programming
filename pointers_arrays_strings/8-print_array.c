@@ -14,6 +14,9 @@ void print_array(int *arr, int count)
 
 	for(i = 0; i < count ; i++)
 	{
-		printf("%d\n", arr[i]);
+		if (i > 0)
+			printf(", ");
+		printf("%d", arr[i]);
 	}
+	printf("\n");
 }
