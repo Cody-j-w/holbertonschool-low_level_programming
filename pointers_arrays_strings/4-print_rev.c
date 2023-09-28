@@ -19,7 +19,7 @@ void print_rev(char *str)
 		i++;
 	}
 
-	end = i -1;
+	end = i - 1;
 
 	for (j = end ; j >= 0 ; j--)
 	{
