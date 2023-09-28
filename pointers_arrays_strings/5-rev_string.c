@@ -20,6 +20,7 @@ void rev_string(char *str)
 	while (str[i] != '\0')
 	{
 		i++;
+		holder[i] = str[i];
 	}
 	end = i;
 
@@ -27,8 +28,7 @@ void rev_string(char *str)
 
 	for (j = end ; j >= 0 ; j--)
 	{
-		holder[i] = str[j];
+		str[i] = holder[j];
 		i++;	
 	}
-	*str = holder;
 }
