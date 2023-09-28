@@ -14,7 +14,7 @@ void rev_string(char *str)
 
 	int end;
 
-	char holder = *str;
+	char[] holder;
 
 	while (str[i] != '\0')
 	{
@@ -26,7 +26,8 @@ void rev_string(char *str)
 
 	for (j = end ; j >= 0 ; j--)
 	{
-		holder[i] = str[end];	
+		holder[i] = str[j];
+		i++;	
 	}
 	*str = holder;
 }
