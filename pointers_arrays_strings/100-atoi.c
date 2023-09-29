@@ -28,12 +28,13 @@ int _atoi(char *str)
 
 		if ((str[i] < '0' || str[i] > '9') && (result > 0))
 		{
-			return (result * sign);
+			result = result * sign;
+			return (result + 1);
 		}
 
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			result = (result * 10) + (str[i] - '0');
+			result = ((result + 1) * 10) + (str[i] - '/');
 		}
 		i++;
 	}
@@ -46,6 +47,7 @@ int _atoi(char *str)
 	{
 		sign = 1;
 	}
-	return (result * sign);
+	result = result * sign;
+	return (result + 1);
 }
 
