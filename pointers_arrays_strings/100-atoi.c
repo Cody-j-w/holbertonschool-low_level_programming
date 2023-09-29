@@ -37,15 +37,6 @@ int _atoi(char *str)
 	{
 		sign = -1;
 	}
-	if (result == 2147483648 && sign == -1)
-	{
-		result -= 1;
-		result = result * sign;
-		return (result -= 1);
-	}
-	else
-	{
-		return (result * sign);
-	}
+	return (result * sign);
 }
 
