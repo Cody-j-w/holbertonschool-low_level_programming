@@ -38,7 +38,7 @@ int _atoi(char *str)
 		i++;
 	}
 
-	if (neg > pos)
+	if (neg % 2 == 1)
 	{
 		sign = -1;
 	}
