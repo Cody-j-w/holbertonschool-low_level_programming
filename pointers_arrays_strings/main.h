@@ -23,4 +23,6 @@ void print_array(int*, int);
 
 char *_strcpy(char*, char*);
 
+int _atoi(char*);
+
 #endif
