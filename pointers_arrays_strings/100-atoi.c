@@ -23,11 +23,11 @@ int _atoi(char *str)
 	{
 		if (str[i] == '-')
 		{
-			neg += 1
+			neg += 1;
 		}
 		if (str[i] == '+')
 		{
-			pos += 1
+			pos += 1;
 		}
 
 		if ((str[i] <= '0' || str[i] >= '9') && (result > 0))
