@@ -34,7 +34,7 @@ int _atoi(char *str)
 
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			result = ((result + 1) * 10) + (str[i] - '/');
+			result = ((result + 1) * 10) + (str[i] - '1');
 		}
 		i++;
 	}
