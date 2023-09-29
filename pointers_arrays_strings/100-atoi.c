@@ -28,10 +28,10 @@ int _atoi(char *str)
 
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			if (result != 0)
-				result = ((result + 1) * 10) + (str[i] - '1');
+			if (result * 10 == 2147483640 && str[i] == '8')
+				result = (result * 10) + 7;
 			else
-				result = str[i] - '1';
+				result = (result * 10) + (str[i] - '0');
 		}
 		i++;
 	}
@@ -40,10 +40,11 @@ int _atoi(char *str)
 	{
 		sign = -1;
 	}
-	result = result * sign;
-	if (result > 0)
-		return (result + 1);
-	else
+	if (result == 2147483647 && sign == -1)
+	{
+		result = result * sign;
 		return (result - 1);
+	}
+	return (result * sign);
 }
 
