@@ -11,7 +11,6 @@ int _atoi(char *str)
 {
 	int i = 0;
 	int neg = 0;
-	int pos = 0;
 	int sign = 1;
 	int result = 0;
 
@@ -21,20 +20,15 @@ int _atoi(char *str)
 		{
 			neg += 1;
 		}
-		if (str[i] == '+')
-		{
-			pos += 1;
-		}
 
 		if ((str[i] < '0' || str[i] > '9') && (result > 0))
 		{
-			result = result * sign;
-			return (result + 1);
+			break;
 		}
 
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			result = ((result + 1) * 10) + (str[i] - '1');
+			result = (result * 10) + (str[i] - '0');
 		}
 		i++;
 	}
@@ -43,11 +37,15 @@ int _atoi(char *str)
 	{
 		sign = -1;
 	}
+	if (result == 2147483648 && sign == -1)
+	{
+		result -= 1;
+		result = result * sign;
+		return (result -= 1);
+	}
 	else
 	{
-		sign = 1;
+		return (result * sign);
 	}
-	result = result * sign;
-	return (result + 1);
 }
 
