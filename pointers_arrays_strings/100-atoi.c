@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _atoi - recreation of the atoi() standard function
@@ -13,38 +14,36 @@ int _atoi(char *str)
 	int neg = 0;
 	int sign = 1;
 	int result = 0;
+	int one = 0;
+	int lastone = 0;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] == '-')
-		{
 			neg += 1;
-		}
-
 		if ((str[i] < '0' || str[i] > '9') && (result > 0))
-		{
 			break;
-		}
-
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			if (result * 10 == 2147483640 && str[i] == '8')
-				result = (result * 10) + 7;
+			if (one == 1)
+				lastone = 1;
 			else
-				result = (result * 10) + (str[i] - '0');
+				lastone = 0;
+			if (str[i] > '1')
+				one = 1;
+			if (str[i] == '1' || str[i] == '0')
+				one = 0;
+			if (result != 0)
+				result = ((result + lastone) * 10) +
+					(str[i] - '0') - one;
+			else
+				result = str[i] - '0' - one;
 		}
 		i++;
 	}
-
 	if (neg % 2 == 1)
-	{
 		sign = -1;
-	}
-	if (result == 2147483647 && sign == -1)
-	{
-		result = result * sign;
-		return (result - 1);
-	}
-	return (result * sign);
+	result = result * sign;
+		return (result + (one * sign));
 }
 
