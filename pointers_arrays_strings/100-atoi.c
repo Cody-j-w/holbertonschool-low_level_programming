@@ -32,18 +32,22 @@ int _atoi(char *str)
 
 		if ((str[i] <= '0' || str[i] >= '9') && (result > 0))
 			break;
-		
+
 		if (str[i] >= '0' && str[i] <= '9')
 		{
 			result = (result * 10) + (str[i] - '0');
 		}
-	}
 		i++;
 	}
+
 	if (neg > pos)
+	{
 		sign = -1;
+	}
 	else
+	{
 		sign = 1;
+	}
 	return (result * sign);
 }
 
