@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _atoi - recreation of the atoi() standard function
@@ -11,13 +10,9 @@
 int _atoi(char *str)
 {
 	int i = 0;
-
 	int neg = 0;
-
 	int pos = 0;
-
 	int sign = 1;
-
 	int result = 0;
 
 	while (str[i] != '\0')
@@ -31,13 +26,13 @@ int _atoi(char *str)
 			pos += 1;
 		}
 
-		if ((str[i] <= '0' || str[i] >= '9') && (result > 0))
-			printf("current character is: %d\n", str[i]);
+		if ((str[i] < '0' || str[i] > '9') && (result > 0))
+		{
 			return (result * sign);
+		}
 
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			printf("adding %d to %d\n", str[i], result * 10);
 			result = (result * 10) + (str[i] - '0');
 		}
 		i++;
