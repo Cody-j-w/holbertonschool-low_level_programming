@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		for (; j < 13; j++)
 		{
 			if ((str[i - 1] == delimit[j] || i == 0) &&
-					(str[i] >= 'a' || str[i] <= 'z'))
+					(str[i] >= 'a' && str[i] <= 'z'))
 				str[i] -= ' ';
 		}
 		i++;
