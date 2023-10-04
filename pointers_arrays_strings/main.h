@@ -25,4 +25,6 @@ char *_strcpy(char*, char*);
 
 int _atoi(char*);
 
+char *_strcat(char*, char*);
+
 #endif
