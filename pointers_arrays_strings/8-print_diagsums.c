@@ -8,7 +8,7 @@
  * @size: the size of the internal arrays in arr
  */
 
-void print_diagsums(int *arr, int size);
+void print_diagsums(int *arr, int size)
 {
 	int newArr[size][size] = arr;
 	int i;
