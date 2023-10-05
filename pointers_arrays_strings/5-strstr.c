@@ -23,8 +23,15 @@ char *_strstr(char *str, char *sub)
 			holder = i;
 			while (sub[j] != '\0')
 			{
-				i++;
-				j++;
+				if (str[i] == sub[j])
+				{
+					i++;
+					j++;
+				}
+				else
+				{
+					break;
+				}
 			}
 			if (sub[j] == '\0')
 			{
