@@ -14,13 +14,13 @@ void print_diagsums(int *arr, int size)
 	int sum_x = 0;
 	int sum_y = 0;
 
-	while (i < (size*size))
+	while (i < (size * size))
 	{
 		sum_x += arr[i];
 		i = i + 1 + size;
 	}
-	i = size - 1;	
-	while ( i < (size*size))
+	i = size - 1;
+	while (i < (size * size))
 	{
 		sum_y += arr[i];
 		i = i + size - 1;
