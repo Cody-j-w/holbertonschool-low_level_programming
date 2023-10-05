@@ -13,11 +13,11 @@
 
 char *_memset(char *loc, char con, unsigned int num)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < num; i++)
 	{
-		loc[i] = num;
+		loc[i] = con;
 	}
 	return (loc);
 }
