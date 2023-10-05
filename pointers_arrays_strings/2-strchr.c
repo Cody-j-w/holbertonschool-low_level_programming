@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr - finds the first instance of a specific character in a 
+ * _strchr - finds the first instance of a specific character in a
  * provided string.
  *
  * @str: the provided string
