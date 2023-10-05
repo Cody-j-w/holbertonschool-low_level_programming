@@ -8,7 +8,7 @@
  * @con: the constant byte that will fill memory.
  * @num: the number of memory spaces to be filled.
  *
- * return: loc
+ * Return: loc
  */
 
 char *_memset(char *loc, char con, unsigned int num)
