@@ -33,7 +33,7 @@ char *_strstr(char *str, char *sub)
 		i++;
 	}
 	if (sub[0] == '\0')
-		return (str);	
+		return (str);
 	return (0);
 }
 
