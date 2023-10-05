@@ -14,14 +14,12 @@
 char *_strchr(char *str, char cha)
 {
 	int i;
-	char *chaptr;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] == cha)
 		{
-			chaptr = &str[i];
-			return (*chaptr);
+			return (str + i);
 		}
 		i++;
 	}
