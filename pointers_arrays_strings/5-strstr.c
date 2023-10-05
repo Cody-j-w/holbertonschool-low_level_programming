@@ -34,6 +34,7 @@ char *_strstr(char *str, char *sub)
 		}
 		i = holder;
 		j = 0;
+		i++;
 	}
 	return (0);
 }
