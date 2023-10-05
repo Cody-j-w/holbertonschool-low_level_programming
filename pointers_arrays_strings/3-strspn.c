@@ -30,7 +30,7 @@ unsigned int _strspn(char *str, char *accept)
 			else
 				end = 0;
 		}
-		if (end = 0)
+		if (end == 0)
 			return (res);
 		j = 0;
 	}
