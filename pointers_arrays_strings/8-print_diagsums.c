@@ -20,7 +20,7 @@ void print_diagsums(int *arr, int size)
 		i = i + 1 + size;
 	}
 	i = size - 1;	
-	while ( i >= 0)
+	while ( i < (size*size))
 	{
 		sum_y += arr[i];
 		i = i + size - 1;
