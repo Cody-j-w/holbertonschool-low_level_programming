@@ -25,7 +25,7 @@ char *_strstr(char *str, char *sub)
 				j++;
 				if (sub[j] == '\0')
 				{
-					res = &str[holder];
+					res = &str[i];
 					return (res);
 				}
 			}
