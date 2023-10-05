@@ -13,7 +13,6 @@ char *_strstr(char *str, char *sub)
 {
 	int i = 0;
 	int j = 0;
-	int holder = 0;
 	char *res;
 
 	while (str[i] != '\0')
