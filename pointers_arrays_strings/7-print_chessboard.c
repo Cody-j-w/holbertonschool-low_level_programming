@@ -10,7 +10,6 @@
 
 void print_chessboard(char (*arr)[8])
 {
-	char *arrptr = &arr;
 	int i;
 	int j;
 	int arrSize = sizeof(*arr) / sizeof(*arr[0]);
@@ -19,7 +18,7 @@ void print_chessboard(char (*arr)[8])
 	{
  		for (j = 0; j < 8; j++)
 	       {
-		       _putchar(arrptr[i][j]);
+		       _putchar(arr[i][j]);
 	       }
 	       _putchar('\n');
 	}
