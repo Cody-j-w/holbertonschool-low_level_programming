@@ -13,7 +13,7 @@ char *_strstr(char *str, char *sub)
 {
 	int i = 0;
 	int j = 0;
-	int holder;
+	int holder = 0;
 	char *res;
 
 	while (str[i] != '\0')
@@ -21,20 +21,22 @@ char *_strstr(char *str, char *sub)
 		if (str[i] == sub[0])
 		{
 			holder = i;
-			while (sub[j] == str[i])
+			while (sub[j] != '\0')
 			{
 				i++;
 				j++;
-				if (sub[j] == '\0')
-				{
-					res = &str[holder];
-					return (res);
-				}
+			}
+			if (sub[j] == '\0')
+			{
+				res = &str[holder];
+				return (res);
 			}
 		}
-		i = holder;
 		j = 0;
-		i++;
+		if (holder != 0)
+			i = holder + 1;
+		else
+			i++;
 	}
 	return (0);
 }
