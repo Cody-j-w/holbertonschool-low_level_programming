@@ -21,7 +21,7 @@ char *_strchr(char *str, char cha)
 		if (str[i] == cha)
 		{
 			chaptr = &str[i];
-			return (chaptr);
+			return (chaptr*);
 		}
 		i++;
 	}
