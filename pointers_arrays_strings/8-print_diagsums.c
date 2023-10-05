@@ -19,14 +19,13 @@ void print_diagsums(int *arr, int size)
 		sum_x += arr[i];
 		i = i + 1 + size;
 	}
-	
+	i = size - 1;	
 	while ( i >= 0)
 	{
 		sum_y += arr[i];
-		i = i - 1 - size;
+		i = i + size - 1;
 	}
 
-	printf("%d\n", sum_x);
-	printf("%d\n", sum_y);
+	printf("%d, %d\n", sum_x, sum_y);
 }
 
