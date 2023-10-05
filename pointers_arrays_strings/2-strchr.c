@@ -14,7 +14,7 @@
 char *_strchr(char *str, char cha)
 {
 	int i;
-	char *chaptr;
+	char *chaptr = NULL;
 
 	while (str[i] != '\0')
 	{
@@ -25,5 +25,5 @@ char *_strchr(char *str, char cha)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
