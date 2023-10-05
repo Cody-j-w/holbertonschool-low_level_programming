@@ -10,18 +10,20 @@
 
 void print_diagsums(int *arr, int size)
 {
-	int newArr[size][size] = arr;
-	int i;
-	sum_x = 0;
-	sum_y = 0;
+	int i = 0;
+	int sum_x = 0;
+	int sum_y = 0;
 
-	for (i = 0; i < size; i++)
+	while (i < (size*size))
 	{
-		sum_x += newArr[i][i];
+		sum_x += arr[i];
+		i = i + 1 + size;
 	}
-	for (i = size - 1; i >= 0; i--)
+	
+	while ( i >= 0)
 	{
-		sum_y += newArr[i][i];
+		sum_y += arr[i];
+		i = i - 1 - size;
 	}
 
 	printf("%d\n", sum_x);
