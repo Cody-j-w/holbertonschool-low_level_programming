@@ -18,32 +18,20 @@ char *_strstr(char *str, char *sub)
 
 	while (str[i] != '\0')
 	{
-		if (str[i] == sub[0])
+		if (str[i] == sub[j])
 		{
-			holder = i;
-			while (sub[j] != '\0')
+			while (sub[j] == str [i + j])
 			{
-				if (str[i] == sub[j])
+				j++;
+				if (sub[j] == '\0')
 				{
-					i++;
-					j++;
+					res = &str[holder];
+					return (res);
 				}
-				else
-				{
-					break;
-				}
-			}
-			if (sub[j] == '\0')
-			{
-				res = &str[holder];
-				return (res);
 			}
 		}
 		j = 0;
-		if (holder != 0)
-			i = holder + 1;
-		else
-			i++;
+		i++;
 	}
 	return (0);
 }
