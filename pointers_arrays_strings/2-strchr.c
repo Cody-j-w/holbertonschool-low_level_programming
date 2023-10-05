@@ -13,15 +13,22 @@
 
 char *_strchr(char *str, char cha)
 {
-	int i;
+	int i = 0;
+	char *chaptr;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] == cha)
 		{
-			return (str + i);
+			chaptr = &str[i];
+			return (chaptr);
 		}
 		i++;
+	}
+	if (str[i] == cha)
+	{
+		chaptr = &str[i];
+		return (chaptr);
 	}
 	return (0);
 }
