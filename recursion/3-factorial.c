@@ -3,7 +3,7 @@
 /**
  * factorial - calculate the factorial of a provided integer
  * @n: the integer to be factorialized
- * 
+ *
  * Return: the factorial value, or -1 if initial value is less than 0
  */
 
