@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	if (n == 0 || n == 1)
 		return (0);
 	else
-		return (prime_helper(n, 2);
+		return (prime_helper(n, 2));
 }
 
 int prime_helper(int base, int divisor)
@@ -24,5 +24,5 @@ int prime_helper(int base, int divisor)
 	else if (base % divisor == 0)
 		return (0);
 	else 
-		return (prime_helper(base, divisor + 1);
+		return (prime_helper(base, divisor + 1));
 }
