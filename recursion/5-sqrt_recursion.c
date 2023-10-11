@@ -24,9 +24,18 @@ int _sqrt_recursion(int n)
 	}
 }
 
+/**
+ * _sqrt_helper - provides the calculations for _sqrt_recursion
+ * @x: a representation of n from the parent function
+ * @y: an integer that will eventually either be returned as the root, or
+ * determine that there is no root to be found
+ *
+ * Return: y if the root is found, -1 if not
+ */
+
 int _sqrt_helper(int x, int y)
 {
-	if (y >= x/2)
+	if (y >= x / 2)
 		return (-1);
 	else if (y * y == x)
 		return (y);
