@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
 
 int _sqrt_helper(int x, int y)
 {
-	if (y <= x/2)
+	if (y >= x/2)
 		return (-1);
 	else if (y * y == x)
 		return (y);
