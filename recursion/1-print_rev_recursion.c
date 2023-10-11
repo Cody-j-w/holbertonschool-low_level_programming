@@ -9,11 +9,7 @@ void _print_rev_recursion(char *str)
 {
 	char *strptr = str;
 
-	if (*str == '\0')
-	{
-		break;
-	}
-	else
+	if (*str != '\0')
 	{
 		strptr++;
 		_print_rev_recursion(strptr);
