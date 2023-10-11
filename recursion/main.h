@@ -17,4 +17,8 @@ int _sqrt_recursion(int);
 
 int _sqrt_helper(int, int);
 
+int is_prime_number(int);
+
+int prime_helper(int, int);
+
 #endif
