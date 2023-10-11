@@ -15,6 +15,6 @@ int _pow_recursion(int, int);
 
 int _sqrt_recursion(int);
 
-int sqrt_helper(int, int);
+int _sqrt_helper(int, int);
 
 #endif
