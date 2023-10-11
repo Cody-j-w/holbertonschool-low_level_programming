@@ -10,8 +10,6 @@
 
 int _sqrt_recursion(int n)
 {
-	int num = 0;
-
 	if (n < 0)
 	{
 		return (-1);
@@ -22,7 +20,16 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		num = _sqrt_recursion(n - 1);
-		return ((num + n / num) / 2);
+		return (_sqrt_helper(n, 2);
 	}
+}
+
+int _sqrt_helper(int x, int y)
+{
+	if (y <= x/2)
+		return (-1);
+	else if (y * y == x)
+		return (y);
+	else
+		return (_sqrt_helper(x, y + 1));
 }
