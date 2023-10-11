@@ -11,4 +11,6 @@ int _strlen_recursion(char*);
 
 int factorial(int n);
 
+int _pow_recursion(int, int);
+
 #endif
