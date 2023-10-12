@@ -29,10 +29,10 @@ int main(int argc, char *argv[])
 				}
 				else
 				{
-					sum += atoi(argv[i]);
 					j++;
 				}
 			}
+			sum += atoi(*arg[i]);
 		}
 		i++;
 	}
