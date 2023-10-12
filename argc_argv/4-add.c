@@ -13,20 +13,28 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
+	int j = 0;
 	int sum = 0;
 
 	while (i < argc)
 	{
-		if ((*argv[i] > '9' || *argv[i] < '0') && i > 0)
+		if (i > 0)
 		{
-			printf("Error");
-			return (1);
+			while (arg[i][j] != '\0')
+			{
+				if (arg[i][j] > '9' || arg[i][j] < '0')
+				{
+					printf("Error");
+					return (1);
+				}
+				else
+				{
+					sum += atoi(argv[i]);
+					j++;
+				}
+			}
 		}
-		else
-		{
-			sum += atoi(argv[i]);
-			i++;
-		}
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
