@@ -13,32 +13,32 @@ int _isupper(int);
 
 int _isdigit(int);
 
-int _strlen(char*);
+int _strlen(char *);
 
-void _puts(char*);
+void _puts(char *);
 
-char *_strcpy(char*, char*);
+char *_strcpy(char *, char *);
 
-int _atoi(char*);
+int _atoi(char *);
 
-char *_strcat(char*, char*);
+char *_strcat(char *, char *);
 
-char *_strncat(char*, char*, int);
+char *_strncat(char *, char *, int);
 
-char *_strncpy(char*, char*, int);
+char *_strncpy(char *, char *, int);
 
-int _strcmp(char*, char*);
+int _strcmp(char *, char *);
 
-char *_memset(char*, char, int);
+char *_memset(char *, char, int);
 
-char *_memcpy(char*, char*, unsigned int);
+char *_memcpy(char *, char *, unsigned int);
 
-char *_strchr(char*, char);
+char *_strchr(char *, char);
 
-unsigned int _strspn(char*, char*);
+unsigned int _strspn(char *, char *);
 
-char *_strpbrk(char*, char*);
+char *_strpbrk(char *, char *);
 
-char *_strstr(char*, char*);
+char *_strstr(char *, char *);
 
 #endif
