@@ -34,6 +34,9 @@ int **alloc_grid(int width, int height)
 			}
 			else
 			{
+				for (; i >= 0; i--)
+					free(arr[i]);
+				free(arr);
 				return (0);
 			}
 		}
@@ -41,6 +44,7 @@ int **alloc_grid(int width, int height)
 	}
 	else
 	{
+		free(arr);
 		return (0);
 	}
 }
