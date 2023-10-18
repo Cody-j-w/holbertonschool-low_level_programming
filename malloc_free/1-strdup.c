@@ -5,7 +5,7 @@
  * _strdup - allocates memory, and then duplicated a given string in that
  * allocated area
  * @str: the string to be duplicated
- * 
+ *
  * Return: a pointer to the string, or null if the function failed
  */
 
@@ -28,7 +28,7 @@ char *_strdup(char *str)
 
 	if (new_str)
 	{
-		for (; i >= 0 i--)
+		for (; i >= 0; i--)
 		{
 			new_str[i] = str[i];
 		}
