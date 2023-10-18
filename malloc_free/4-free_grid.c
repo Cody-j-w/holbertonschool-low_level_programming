@@ -4,7 +4,7 @@
 /**
  * free_grid - frees memory allocated in a grid
  * @grid: the grid being freed up
- * height: the height of the grid
+ * @height: the height of the grid
  *
  */
 
