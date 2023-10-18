@@ -9,8 +9,8 @@
  * Return: a pointer to the string, or null if the function failed
  */
 
- char *_strdup(char *str)
- {
+char *_strdup(char *str)
+{
 	int i = 0;
 	char *new_str;
 
@@ -28,7 +28,10 @@
 
 	if (new_str)
 	{
-		new_str = str;
+		for (; i >= 0 i--)
+		{
+			new_str[i] = str[i];
+		}
 		return (new_str);
 	}
 	else
