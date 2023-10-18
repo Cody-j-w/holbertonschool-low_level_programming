@@ -24,17 +24,10 @@ int **alloc_grid(int width, int height)
 	{
 		while (i < width)
 		{
-			if (arr[i])
+			while (j < height)
 			{
-				while (j < height)
-				{
-					arr[i][j] = 0;
-					j++;
-				}
-			}
-			else
-			{
-				return (0);
+				arr[i][j] = 0;
+				j++;
 			}
 			i++;
 			j = 0;
