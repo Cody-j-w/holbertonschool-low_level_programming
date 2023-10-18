@@ -9,5 +9,6 @@ char *_strdup(char *);
 
 char *str_concat(char *, char *);
 
+int **alloc_grid(int, int);
 
 #endif
