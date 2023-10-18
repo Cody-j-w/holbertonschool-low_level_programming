@@ -28,7 +28,7 @@ char *string_nconcat(char *str1, char *str2, unsigned int n)
 	else
 		limiter = n;
 
-	new_str = malloc(_strlen(str1) + _strlen(str2) + 1);
+	new_str = malloc(_strlen(str1) + limiter + 1);
 
 	if (new_str)
 	{
