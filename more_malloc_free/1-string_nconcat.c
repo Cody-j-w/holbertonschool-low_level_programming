@@ -23,7 +23,7 @@ char *string_nconcat(char *str1, char *str2, unsigned int n)
 		str1 = "";
 	if (!str2)
 		str2 = "";
-	if (n > _strlen(str2))
+	if (n > (unsigned int)_strlen(str2))
 		limiter = _strlen(str2);
 	else
 		limiter = n;
