@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include "0-memset.c"
 
 /**
  * _calloc - allocate memory for an array of elements of a particular
@@ -13,9 +14,8 @@
 
  void *_calloc(unsigned int nmemb, unsigned int size)
  {
- 	unsigned int i = 0;
-	unsigned char *new_arr = NULL;
 	unsigned int val;
+	char *new_arr;
 
 	if (nmemb >= 1 && size >= 1)
 		val = nmemb * size;
@@ -26,12 +26,8 @@
 
 	if (new_arr)
 	{
-		while (i < val)
-		{
-			*new_arr = '\0';
-			new_arr++;
-			i++;
-		}
+		_memset(new_arr, '\0', val);
+		
 		return (new_arr);
 	}
 	return (0);
