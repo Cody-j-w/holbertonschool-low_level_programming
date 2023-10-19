@@ -24,13 +24,5 @@
 
 	new_arr = malloc(val);
 
-	if (new_arr)
-	{
-		for (i = 0; i < nmemb * size; i++)
-		{
-			new_arr[i] = 0;
-		}
-		return (new_arr);
-	}
-	return (0);
+	
 }
