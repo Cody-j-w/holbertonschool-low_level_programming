@@ -14,7 +14,7 @@
  void *_calloc(unsigned int nmemb, unsigned int size)
  {
  	unsigned int i;
-	int *new_arr;
+	unsigned int *new_arr;
 
 	if (!nmemb || !size)
 		return (0);
