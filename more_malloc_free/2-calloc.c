@@ -12,8 +12,8 @@
  * Return: a pointer for the array
  */
 
- void *_calloc(unsigned int nmemb, unsigned int size)
- {
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
 	unsigned int val;
 	char *new_arr;
 
@@ -27,7 +27,6 @@
 	if (new_arr)
 	{
 		_memset(new_arr, '\0', val);
-		
 		return (new_arr);
 	}
 	return (0);
