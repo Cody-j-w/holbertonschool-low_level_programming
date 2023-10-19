@@ -19,7 +19,7 @@
 	if (!nmemb || !size)
 		return (0);
 
-	new_arr = malloc(nmemb * size);
+	new_arr = malloc(nmemb);
 
 	if (new_arr)
 	{
