@@ -13,7 +13,7 @@
 
  void *_calloc(unsigned int nmemb, unsigned int size)
  {
- 	unsigned int i;
+ 
 	unsigned int *new_arr;
 	unsigned int val;
 
