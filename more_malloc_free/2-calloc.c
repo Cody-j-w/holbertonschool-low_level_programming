@@ -13,7 +13,7 @@ include "main.h"
 
  void *_calloc(unsigned int nmemb, unsigned int size)
  {
- 	int i;
+ 	unsigned int i;
 	int *new_arr;
 
 	if (nmemb == 0 || size == 0)
