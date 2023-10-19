@@ -15,8 +15,14 @@
  {
  	unsigned int i;
 	unsigned int *new_arr;
+	unsigned int val;
 
-	new_arr = malloc(nmemb);
+	if (nmemb >= 1 && size >= 1)
+		val = nmemb * size;
+	else
+		return (0);
+
+	new_arr = malloc(val);
 
 	if (new_arr)
 	{
