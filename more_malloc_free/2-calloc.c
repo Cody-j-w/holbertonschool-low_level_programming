@@ -25,11 +25,13 @@
 	new_arr = malloc(val);
 
 	if (new_arr)
+	{
 		while (i < val)
 		{
 			new_arr[i] = 0;
 			i++;
 		}
 		return (new_arr);
+	}
 	return (0);
 }
