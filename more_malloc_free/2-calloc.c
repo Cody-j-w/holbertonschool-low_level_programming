@@ -16,9 +16,6 @@
  	unsigned int i;
 	unsigned int *new_arr;
 
-	if (!nmemb || !size)
-		return (0);
-
 	new_arr = malloc(nmemb);
 
 	if (new_arr)
