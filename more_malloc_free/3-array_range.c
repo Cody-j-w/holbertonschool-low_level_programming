@@ -9,7 +9,7 @@
  * Return: the finished array
  */
 
-int *array_range(int, int)
+int *array_range(int min, int max)
 {
 	int i;
 	int x = min;
