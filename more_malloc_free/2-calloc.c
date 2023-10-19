@@ -24,5 +24,7 @@
 
 	new_arr = malloc(val);
 
-	
+	if (new_arr)
+		return (new_arr);
+	return (0);
 }
