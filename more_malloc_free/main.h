@@ -13,6 +13,6 @@ void *_calloc(unsigned int, unsigned int);
 
 int *array_range(int, int);
 
-int *memset_range(int *, int, int);
+int *set_range(int *, int, int);
 
 #endif
