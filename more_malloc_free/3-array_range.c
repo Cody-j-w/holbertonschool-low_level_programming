@@ -1,4 +1,5 @@
 #include "main.h"
+#include "memset_range.c"
 #include <stdlib.h>
 
 /**
@@ -20,13 +21,6 @@ int *array_range(int min, int max)
 	new_arr = malloc(((max - min) * sizeof(int)) - 1);
 
 	if (new_arr)
-	{
-		for (i = 0; x <= max; i++)
-		{
-			new_arr[i] = x;
-			x++;
-		}
-		return (new_arr);
-	}
+		return (memset_range(new_arr, min, max));
 	return (0);
 }
