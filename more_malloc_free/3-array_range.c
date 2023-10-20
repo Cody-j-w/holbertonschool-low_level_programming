@@ -12,13 +12,11 @@
 
 int *array_range(int min, int max)
 {
-	int i;
-	int x = min;
 	int *new_arr;
 
 	if (min > max)
 		return (0);
-	new_arr = malloc(((max - min) * sizeof(int)) - 1);
+	new_arr = malloc(((max - min) * sizeof(int)) + 1);
 
 	if (new_arr)
 		return (memset_range(new_arr, min, max));
