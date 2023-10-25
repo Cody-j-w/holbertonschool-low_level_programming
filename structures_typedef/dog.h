@@ -1,3 +1,5 @@
+#ifndef HEADER
+#define HEADER
 /**
  * struct dog - a simple struct containing the details for a dog.
  * @name: the name of the dog.
@@ -11,3 +13,4 @@ struct dog
     float age;
     char *owner;
 };
+#endif
