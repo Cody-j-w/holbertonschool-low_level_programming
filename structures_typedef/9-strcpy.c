@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * _strcpy - copy the value of a string to a new location
