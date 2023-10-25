@@ -13,7 +13,8 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *puppy;
+	dog_t puppy;
+	dog_t *leash = &puppy;
 	char *pup_name = name;
 	char *pup_owner = owner;
 
@@ -21,5 +22,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	puppy.age = age;
 	puppy.owner = pup_owner;
 
-	return (puppy);
+	return (*leash);
 }
