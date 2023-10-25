@@ -9,3 +9,7 @@ The function to initialize our dog struct.
 
 ## 2-print_dog.c
 This function will print the information about a dog struct to stdout.
+
+## 4-new_dog.c
+This function creates a new dog, using the dog_t typedef, with
+information provided through the function params.
