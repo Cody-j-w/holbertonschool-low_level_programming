@@ -22,5 +22,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	puppy.age = age;
 	puppy.owner = pup_owner;
 
-	return (*leash);
+	return (leash);
 }
