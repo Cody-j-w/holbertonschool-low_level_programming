@@ -1,4 +1,5 @@
 #include "dog.h"
+#include "9-strcpy.c"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -13,14 +14,12 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t puppy;
-	dog_t *leash = &puppy;
-	char *pup_name = name;
-	char *pup_owner = owner;
+	dog_t *puppy;
+	puppy = malloc(sizeof(dog_t));
 
-	puppy.name = pup_name;
-	puppy.age = age;
-	puppy.owner = pup_owner;
+	_strcpy(puppy->name, name);
+	puppy->age = age;
+	_strcpy(puppy->owner, owner);
 
-	return (leash);
+	return (puppy);
 }
