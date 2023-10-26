@@ -1,5 +1,4 @@
 #include "dog.h"
-#include "2-strlen.c"
 #include "1-strdup.c"
 #include <stdlib.h>
 #include <stdio.h>
