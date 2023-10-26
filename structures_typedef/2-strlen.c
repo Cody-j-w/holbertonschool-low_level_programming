@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * _strlen - determines the length of a string.
