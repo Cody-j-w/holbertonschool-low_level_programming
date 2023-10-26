@@ -8,7 +8,7 @@
  * @array: the array being compared.
  * @size: the size of @array.
  * @cmp: the function being used to compare @array.
- * 
+ *
  * Return: the index of the first element that matches, or -1
  * if the array is empty/NULL or contains no matches
 */
@@ -19,13 +19,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (array)
 	{
-		if (size <=0)
+		if (size <= 0)
 		{
 			if (cmp)
 			{
 				for (i = 0; i < size; i++)
 				{
-					if (cmp(array[i]) != 0)
+					if (cmp(array[i]))
 						return (i);
 				}
 			}
