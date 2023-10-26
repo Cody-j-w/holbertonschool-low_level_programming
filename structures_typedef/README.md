@@ -13,3 +13,6 @@ This function will print the information about a dog struct to stdout.
 ## 4-new_dog.c
 This function creates a new dog, using the dog_t typedef, with
 information provided through the function params.
+
+## 5-free_dog.c
+It was this function who let the dog out.
