@@ -20,9 +20,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (puppy)
 	{
-		puppy->name = _strcpy((pup_name, name);
+		puppy->name = _strcpy((pup_name, name));
 		puppy->age = age;
-		puppy->owner = _strcpy((pup_owner, owner);
+		puppy->owner = _strcpy((pup_owner, owner));
 
 		return (puppy);
 	}
