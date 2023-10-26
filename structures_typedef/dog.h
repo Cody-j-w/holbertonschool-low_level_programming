@@ -30,5 +30,4 @@ char *_strcpy(char *, char *);
 
 char *_strdup(char *);
 
-int _strlen(char *);
 #endif
