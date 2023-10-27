@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 	if ((arg_l > 1) || (op != '+' && op != '-' && op != '*' && op != '/' &&
 	op != '%'))
 	{
+		printf("Error\n");
 		exit(99);
 	}
 
