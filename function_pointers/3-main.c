@@ -14,7 +14,9 @@
 
 int main(int argc, char *argv[])
 {
-	void *res;
+	int res;
+	int arg_l = strlen(argv[2]);
+	char op = argv[2][0];
 
 	if (argc != 4)
 	{
@@ -27,14 +29,14 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	res = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-
-	if (res != NULL)
+	if ((arg_l > 1) || (op != '+' && op != '-' && op != '*' && op != '/' &&
+	op != '%'))
 	{
-		printf("%d\n", res);
-		return (0);
+		exit(99);
 	}
 
-	printf("Error\n");
-	exit(99);
+	res = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+
+	printf("%d\n", res);
+	return (0);
 }
