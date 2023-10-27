@@ -25,7 +25,7 @@ int (*get_op_func(char *operator))(int a, int b)
 
 	while (i <= 5)
 	{
-		if (operator == ops[i].op || ops[i].op == NULL)
+		if (operator[0] == ops[i].op[0] || ops[i].op == NULL)
 			return (ops[i].f);
 		i++;
 	}
