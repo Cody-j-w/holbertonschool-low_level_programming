@@ -6,7 +6,7 @@
 /**
  * sum_them_all - accept a variable number of parameters and sum them
  * @index: the number of parameters being passed
- * 
+ *
  * Return: the summed total
 */
 
@@ -16,12 +16,12 @@ int sum_them_all(const unsigned int index, ...)
 	unsigned int i;
 	va_list ap;
 
-	va_start (ap, index);
+	va_start(ap, index);
 
 	for (i = 0; i < index; i++)
 	{
-		sum += va_arg (ap, int);
+		sum += va_arg(ap, int);
 	}
-	va_end (ap);
+	va_end(ap);
 	return (sum);
 }
