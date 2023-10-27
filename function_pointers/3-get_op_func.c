@@ -23,7 +23,7 @@ int (*get_op_func(char *operator))(int a, int b)
 	};
 	int i = 0;
 
-	while (ops)
+	while (ops[i].op != NULL)
 	{
 		if (operator == ops[i].op)
 			return (ops[i].f);
