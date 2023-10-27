@@ -11,7 +11,7 @@
 typedef struct op
 {
     char *op;
-    int (*f)(int, int)
+    int (*f)(int, int);
 } op_t;
 
 int (*get_op_func(char *))(int, int);
