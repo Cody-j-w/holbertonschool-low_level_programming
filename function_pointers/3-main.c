@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	int res;
 
 	if (argc != 4)
-		printf("Exiting!")
+		printf("Exiting!");
 		exit (98);
 	if (argv[2][0] == '/' && atoi(argv[3]) == 0)
 		exit (100);
