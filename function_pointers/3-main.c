@@ -27,11 +27,11 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	res = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	*(int *)res = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 
 	if (res != NULL)
 	{
-		printf("%d\n", (int)res);
+		printf("%d\n", *res);
 		return (0);
 	}
 
