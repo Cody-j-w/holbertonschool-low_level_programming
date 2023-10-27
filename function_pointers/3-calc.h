@@ -4,14 +4,14 @@
 /**
  * struct op - an operator structure, pairing an operator with
  * its respective function
- * 
+ *
  * @op: the operator
  * @f: the operation function
 */
 typedef struct op
 {
-    char *op;
-    int (*f)(int, int);
+	char *op;
+	int (*f)(int, int);
 } op_t;
 
 int (*get_op_func(char *))(int, int);

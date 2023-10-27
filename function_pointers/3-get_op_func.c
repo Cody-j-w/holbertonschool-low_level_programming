@@ -5,9 +5,9 @@
 /**
  * get_op_func - find the correct function by the operator provided
  * and then return it.
- * @operator: the operator of the function that will be fetched by 
+ * @operator: the operator of the function that will be fetched by
  * get_op_func
- * 
+ *
  * Return: a pointer to the function aligning with @op
 */
 
