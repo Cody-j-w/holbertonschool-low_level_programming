@@ -11,7 +11,7 @@
  * Return: a pointer to the function aligning with @op
 */
 
-int (*get_op_func(char *operator))(int a, int, b)
+int (*get_op_func(char *operator))(int a, int b)
 {
 	op_t ops[] = {
 		{"+", op_add},
