@@ -11,3 +11,8 @@ sums them together.
 
 A function that accepts a number of integers and prints them with
 a provided separator between each number.
+
+## 2-print_strings
+
+A similar function to 1-print_numbers, only printing strings instead of
+integers.
