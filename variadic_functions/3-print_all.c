@@ -20,12 +20,16 @@ void print_all(const char * const format, ...)
 		{
 			case 'c' :
 				printf("%c", va_arg(ap, int));
+				continue;
 			case 'i' :
 				printf("%d", va_arg(ap, int));
+				continue;
 			case 'f' :
 				printf("%f", va_arg(ap, double));
+				continue;
 			case 's' :
 				printf("%s", va_arg(ap, char *)); 
+				continue;
 			default :
 				continue;
 		}
