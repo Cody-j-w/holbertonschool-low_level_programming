@@ -17,14 +17,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		printf("iteration: %d\n", i);
-		switch(format[i])
-		{
-			case 'c' :
-				printf("%c", va_arg(ap, int));
-				break;
-			default :
-				break;
-		}
+		
 		i++;
 	}
 }
