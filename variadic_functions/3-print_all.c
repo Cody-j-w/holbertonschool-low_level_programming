@@ -11,13 +11,18 @@
 
 void print_all(const char * const format, ...)
 {
-
+	va_list ap;
 	int i = 0;
+	key_t keys[] = {
+		{'c', "%c"},
+		{'i', "%d"},
+		{'f', "%f"},
+		{'s', "%s"}
+	};
+	
 
 	while (format[i] != '\0')
 	{
-		printf("iteration: %d\n", i);
 		
-		i++;
 	}
 }
