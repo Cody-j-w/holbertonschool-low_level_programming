@@ -16,6 +16,7 @@ void print_all(const char * const format, ...)
 
 	while (format[i] != '\0')
 	{
+		printf("iteration: %d\n", i)
 		switch(format[i])
 		{
 			case 'c' :
