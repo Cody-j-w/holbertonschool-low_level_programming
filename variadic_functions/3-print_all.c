@@ -26,23 +26,23 @@ void print_all(const char * const format, ...)
 			f_o = format[i + 1];
 			switch (format[i])
 			{
-					case 'c':
-						printf("%c", va_arg(ap, int));
-						break;
-					case 'i':
-						printf("%d", va_arg(ap, int));
-						break;
-					case 'f':
-						printf("%f", va_arg(ap, double));
-						break;
-					case 's':
-						str = va_arg(ap, char *);
-						if (!str)
-							str = "(nil)";
-						printf("%s", str);
-						break;
-					default:
-						break;
+				case 'c':
+					printf("%c", va_arg(ap, int));
+					break;
+				case 'i':
+					printf("%d", va_arg(ap, int));
+					break;
+				case 'f':
+					printf("%f", va_arg(ap, double));
+					break;
+				case 's':
+					str = va_arg(ap, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s", str);
+					break;
+				default:
+					break;
 			}
 			if (f_o != '\0' && (f == 'c' || f == 'i' || f == 'f' || f == 's'))
 				printf(", ");
@@ -51,5 +51,5 @@ void print_all(const char * const format, ...)
 		break;
 	}
 	printf("\n");
-	va_end(ap);	
+	va_end(ap);
 }
