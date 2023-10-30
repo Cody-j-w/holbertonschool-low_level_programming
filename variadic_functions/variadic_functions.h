@@ -1,11 +1,6 @@
 #ifndef HEADER
 #define HEADER
 
-typedef struct key 
-{
-    char;
-    char *;
-} key_t;
 
 int sum_them_all(const unsigned int, ...);
 

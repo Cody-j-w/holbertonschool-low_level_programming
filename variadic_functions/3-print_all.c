@@ -13,16 +13,26 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
-	key_t keys[] = {
-		{'c', "%c"},
-		{'i', "%d"},
-		{'f', "%f"},
-		{'s', "%s"}
-	};
-	
 
 	while (format[i] != '\0')
 	{
-		
+		switch(format[i])
+		{
+				case 'c':
+						printf("%c\n", va_arg(ap, int));
+						break;
+				case 'i':
+						printf("%d\n", va_arg(ap, int));
+						break;
+				case 'f':
+						printf("%f\n", va_arg(ap, double));
+						break;
+				case 's':
+						printf("%s\n", va_arg(ap, char *));
+						break;
+				default:
+						break;
+		}
+		++i;
 	}
 }
