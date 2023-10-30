@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 					default:
 						break;
 			}
-			if (f_one != '\0' && (f == 'c' || f == 'i' || f == 'f' || f == 's'))
+			if (f_o != '\0' && (f == 'c' || f == 'i' || f == 'f' || f == 's'))
 				printf(", ");
 			++i;
 		}
