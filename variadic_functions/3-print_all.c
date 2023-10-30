@@ -15,8 +15,7 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	int i = 0;
 	char *str;
-	char f;
-	char f_one;
+	char f, f_o;
 
 	while (format)
 	{
@@ -24,26 +23,26 @@ void print_all(const char * const format, ...)
 		while (format[i] != '\0')
 		{
 			f = format[i];
-			f_one = format[i + 1];
-			switch(format[i])
+			f_o = format[i + 1];
+			switch (format[i])
 			{
 					case 'c':
-							printf("%c", va_arg(ap, int));
-							break;
+						printf("%c", va_arg(ap, int));
+						break;
 					case 'i':
-							printf("%d", va_arg(ap, int));
-							break;
+						printf("%d", va_arg(ap, int));
+						break;
 					case 'f':
-							printf("%f", va_arg(ap, double));
-							break;
+						printf("%f", va_arg(ap, double));
+						break;
 					case 's':
-							str = va_arg(ap, char *);
-							if (!str)
-								str = "(nil)";
-							printf("%s", str);
-							break;
+						str = va_arg(ap, char *);
+						if (!str)
+							str = "(nil)";
+						printf("%s", str);
+						break;
 					default:
-							break;
+						break;
 			}
 			if (f_one != '\0' && (f == 'c' || f == 'i' || f == 'f' || f == 's'))
 				printf(", ");
@@ -52,6 +51,5 @@ void print_all(const char * const format, ...)
 		break;
 	}
 	printf("\n");
-	va_end(ap);
-	
+	va_end(ap);	
 }
