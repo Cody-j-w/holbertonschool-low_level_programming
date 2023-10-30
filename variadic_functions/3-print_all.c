@@ -13,6 +13,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
+	char *str;
 
 	va_start(ap, format);
 
@@ -30,14 +31,19 @@ void print_all(const char * const format, ...)
 						printf("%f\n", va_arg(ap, double));
 						break;
 				case 's':
-						printf("%s\n", va_arg(ap, char *));
+						str = va_arg(ap, char *);
+						if (!str)
+							printf("s\n", "(nil)");
+						else
+							printf("%s\n", str);
 						break;
 				default:
 						break;
 		}
 		++i;
 	}
-
+	if (strlen(format) < 1)
+		printf("\n"); 
 	va_end(ap);
-	printf('\n');
+	
 }
