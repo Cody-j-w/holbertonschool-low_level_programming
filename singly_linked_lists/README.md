@@ -14,3 +14,7 @@ Accepts a list node as a parameter, and will return the length of the list that 
 Accepts a list node and a string, and creates a new node using that
 string as it's value, and inserting itself in the list ahead of the
 given node, setting itself as the new head
+
+## add_node_end
+
+See above, except the new node is added to the end of the list
