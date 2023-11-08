@@ -20,8 +20,8 @@ list_t *add_node(list_t **head, char *str)
 	{
 		if (str)
 		{
-			new_node.str = strdup(str);
-			new_node.len = strlen(str);
+			new_node->str = strdup(str);
+			new_node->len = strlen(str);
 		}
 		new_node.next = *head;
 		return (new_node);
