@@ -4,9 +4,9 @@
 #include <string.h>
 
 /**
- * add_node - adds a node to the beginning of the linked list
+ * add_nodeint - adds a node to the beginning of the linked list
  * @head: the head of the existing list
- * @str: the string to be held in the new node
+ * @num: the int held in the new node
  *
  * Return: the new node
 */
@@ -23,6 +23,6 @@ listint_t *add_nodeint(listint_t **head, const int num)
 	new_node->n = num;
 	new_node->next = *head;
 	*head = new_node;
-	
+
 	return (new_node);
 }
