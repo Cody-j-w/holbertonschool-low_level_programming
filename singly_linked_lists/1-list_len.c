@@ -5,7 +5,7 @@
 /**
  * list_len - gets the list of a provided linked list
  * @head: the beginning of the list
- * 
+ *
  * Return: the length of the list that follows @head
 */
 
