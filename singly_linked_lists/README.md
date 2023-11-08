@@ -18,3 +18,7 @@ given node, setting itself as the new head
 ## add_node_end
 
 See above, except the new node is added to the end of the list
+
+## free_list
+
+Free a list from allocated memory
