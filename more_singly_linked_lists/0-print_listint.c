@@ -5,7 +5,7 @@
 /**
  * print_listint - prints the integers in the list
  * @head: the beginning of the list
- * 
+ *
  * Return: the number of nodes in the list
 */
 
