@@ -7,7 +7,7 @@
  * add_node - adds a node to the beginning of the linked list
  * @head: the head of the existing list
  * @str: the string to be held in the new node
- * 
+ *
  * Return: the new node
 */
 
