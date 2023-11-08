@@ -8,7 +8,7 @@
  * @head: the head of the existing list
  * @str: the string to be held in the new node
  * 
- * Return: 
+ * Return: the new node
 */
 
 list_t *add_node(list_t **head, char *str)
@@ -24,6 +24,7 @@ list_t *add_node(list_t **head, char *str)
 			new_node.len = strlen(str);
 		}
 		new_node.next = *head;
+		return (new_node);
 	}
-	return (new_node);
+	return (NULL);
 }
