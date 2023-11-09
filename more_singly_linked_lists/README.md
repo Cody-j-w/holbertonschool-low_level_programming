@@ -27,3 +27,7 @@ Free a listint from memory and set the head to NULL
 ## pop_listint
 
 Pop the head of a provided listint list off and return its value
+
+## get_nodeint_at_index
+
+Traverse a list and return the value held in the nth node
