@@ -10,12 +10,15 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *temp;
+	listint_t *lead;
 
-	while (head != NULL)
+	lead = *head;
+
+	while (lead != NULL)
 	{
-		printf("Value of head's current position is: %d\n", (*head)->n);
-		temp = *head;
-		*head = (*head)->next;
+		temp = lead;
+		lead = lead->next;
 		free(temp);
 	}
+	head = NULL;
 }
