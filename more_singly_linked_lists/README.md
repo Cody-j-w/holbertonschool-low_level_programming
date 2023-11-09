@@ -31,3 +31,7 @@ Pop the head of a provided listint list off and return its value
 ## get_nodeint_at_index
 
 Traverse a list and return the value held in the nth node
+
+## sum_listint
+
+Sum the values held in all nodes in a list
