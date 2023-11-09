@@ -23,3 +23,7 @@ Free a listint from memory
 ## free_listint2
 
 Free a listint from memory and set the head to NULL
+
+## pop_listint
+
+Pop the head of a provided listint list off and return its value
