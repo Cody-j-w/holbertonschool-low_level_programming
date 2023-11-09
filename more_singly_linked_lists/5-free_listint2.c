@@ -13,9 +13,9 @@ void free_listint2(listint_t **head)
 
 	while (head != NULL)
 	{
+		printf("Value of head's current position is: %d\n", (*head)->n);
 		temp = *head;
 		*head = (*head)->next;
 		free(temp);
 	}
-	head = NULL;
 }
