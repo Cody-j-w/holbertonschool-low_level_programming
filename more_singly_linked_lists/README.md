@@ -35,3 +35,7 @@ Traverse a list and return the value held in the nth node
 ## sum_listint
 
 Sum the values held in all nodes in a list
+
+## insert_nodeint_at_index
+
+Creates a new node at a specified index
