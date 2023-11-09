@@ -19,3 +19,7 @@ Add a new listint node to the end of the list
 ## free_listint
 
 Free a listint from memory
+
+## free_listint2
+
+Free a listint from memory and set the head to NULL
