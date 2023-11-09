@@ -9,7 +9,7 @@
  * Return: the sum of the values
 */
 
-int sum_listint(listint_t *head);
+int sum_listint(listint_t *head)
 {
 	listint_t *count;
 	int sum = 0;
