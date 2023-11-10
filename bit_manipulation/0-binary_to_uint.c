@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -16,10 +17,15 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int base = 1;
 
 	if (!b)
+	{
+		printf("Hit null string check");
 		return (0);
+	}
+	printf("Going into loop: current binary string is %s: %d characters long", b, i);
 
 	while (i >= 0)
 	{
+		printf("iteration number: %d\n", i);
 		if (b[i] != 1 && b[i] != 0)
 			return (0);
 		dec += (b[i] - '0') * base;
