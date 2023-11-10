@@ -16,16 +16,13 @@ unsigned int binary_to_uint(const char *b)
 	int i = strlen(b) - 1;
 	unsigned int base = 1;
 
-	if (!b)
+	if (b == NULL)
 	{
-		printf("Hit null string check");
 		return (0);
 	}
-	printf("Going into loop: current binary string is %s: %d characters long", b, i);
 
 	while (i >= 0)
 	{
-		printf("iteration number: %d\ncurrent bit is %c with an ascii value of %d\n", i, b[i], b[i]-'0');
 		if (b[i] != '1' && b[i] != '0')
 			return (0);
 		dec += (b[i] - '0') * base;
