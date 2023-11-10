@@ -39,3 +39,7 @@ Sum the values held in all nodes in a list
 ## insert_nodeint_at_index
 
 Creates a new node at a specified index
+
+## delete_nodeint_at_index
+
+Deletes a node at a specified index
