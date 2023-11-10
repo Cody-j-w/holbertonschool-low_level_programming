@@ -12,7 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0;
-	unsigned int i = strlen(b);
+	int i = strlen(b);
 	unsigned int base = 1;
 
 	if (!b)
