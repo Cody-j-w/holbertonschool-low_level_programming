@@ -19,13 +19,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (n == 0)
 		return (0);
 
-	while (((n >> sigbit) & 1) == 0)
-	{
-		bit = (n >> sigbit) & 1;
-		sigbit--;
-	}
-
-	for (i = 0; i <= sigbit; i++)
+	for (i = sigbit; i >= 0; i--)
 	{
 
 		bit = (n >> i) & 1;
