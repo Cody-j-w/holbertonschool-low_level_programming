@@ -15,3 +15,7 @@ Gets the value of a particular bit of a particular number
 ## set_bit
 
 Sets a specified bit to 1
+
+## clear_bit
+
+Functions like set_bit, except it is flipping the specified bit to 0
