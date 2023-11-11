@@ -13,7 +13,7 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int mask = ~(0 << index);
+	int mask = ~(1 << index);
 	unsigned int sigbit = sizeof(unsigned long int) * 8 - 1;
     int bit;
 
