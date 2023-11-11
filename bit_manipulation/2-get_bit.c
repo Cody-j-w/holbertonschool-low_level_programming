@@ -14,7 +14,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
 	unsigned int bit;
-	unsigned int sigbit = sizeof(int) * 16 - 1;
+	unsigned int sigbit = sizeof(unsigned long int) * 8 - 1;
 
 	while (((n >> sigbit) & 1) == 0)
 	{
@@ -29,7 +29,6 @@ int get_bit(unsigned long int n, unsigned int index)
 
 		if (i == index)
 		{
-			printf("i: %d\nindex: %d\n", i, index);
 			return (bit);
 		}
 	}
