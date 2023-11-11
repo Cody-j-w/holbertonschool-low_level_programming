@@ -19,3 +19,8 @@ Sets a specified bit to 1
 ## clear_bit
 
 Functions like set_bit, except it is flipping the specified bit to 0
+
+## flip_bits
+
+Determine how many bits would need to be flipped to get from one
+integer to another
