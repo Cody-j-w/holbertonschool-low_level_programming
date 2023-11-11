@@ -9,23 +9,24 @@
 
 void print_binary(unsigned long int n)
 {
-    int i;
-    int bit;
-    int sigbit = sizeof(int) * 16 - 1;
+	int i;
+	int bit;
+	int sigbit = sizeof(int) * 16 - 1;
 
-    if (n == 0)
-    {
-        putchar('0');
-        exit(0);
-    }
+	if (n == 0)
+	{
+		putchar('0');
+		putchar('\n');
+		exit(0);
+	}
 
-    while (((n >> sigbit) & 1) == 0)
-        sigbit--;
+	while (((n >> sigbit) & 1) == 0)
+		sigbit--;
 
-    for (i = sigbit; i >= 0; i--)
-    {
-        bit = (n >> i) & 1;
+	for (i = sigbit; i >= 0; i--)
+	{
+		bit = (n >> i) & 1;
 
-        putchar(bit + '0');
-    }
+		putchar(bit + '0');
+	}
 }
