@@ -13,13 +13,13 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int mask = 0 << index;
+	int mask = ~ (0 << index);
 	unsigned int sigbit = sizeof(unsigned long int) * 8 - 1;
 
 	if (index > sigbit)
 		return (-1);
 
-	*n = *n ^ mask;
+	*n = *n & mask;
 
 	if (get_bit(*n, index) == 0)
 		return (1);
