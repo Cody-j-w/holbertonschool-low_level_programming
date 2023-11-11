@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
     int bit;
     int sigbit = sizeof(int) * 16 - 1;
 
-    while (((num >> sigbit) & 1) == 0)
+    while (((n >> sigbit) & 1) == 0)
         sigbit--;
 
     for (i = sigbit; i >= 0; i--)
