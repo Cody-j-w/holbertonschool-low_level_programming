@@ -19,17 +19,19 @@ int get_bit(unsigned long int n, unsigned int index)
 	while (((n >> sigbit) & 1) == 0)
 	{
 		bit = (n >> sigbit) & 1;
-		printf("In sigbit loop; Current bit: %d\n", bit);
 		sigbit--;
 	}
 
 	for (i = 0; i <= sigbit; i++)
 	{
-		printf("current iteration: %d\n", i);
+
 		bit = (n >> i) & 1;
-		printf("In index loop; Current bit: %d\n", bit);
+
 		if (i == index)
+		{
+			printf("i: %d\nindex: %d\n", i, index);
 			return (bit);
+		}
 	}
 	return (-1);
 }
