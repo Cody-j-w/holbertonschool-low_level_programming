@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
     while (((n >> sigbit) & 1) == 0)
         sigbit--;
 
-    for (i = sigbit; i >= 0; i--)
+    for (i = 0; i <= sigbit; i--)
     {
         bit = n & mask;
 
