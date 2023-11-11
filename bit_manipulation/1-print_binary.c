@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
     int mask = 1;
     int i;
     int bit;
-    int sigbit = sizeof(int) * 16 - 1;
+    int sigbit = sizeof(int) * 8 - 1;
 
     while (((n >> sigbit) & 1) == 0)
         sigbit--;
