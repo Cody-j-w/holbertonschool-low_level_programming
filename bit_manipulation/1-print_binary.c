@@ -9,7 +9,6 @@
 
 void print_binary(unsigned long int n)
 {
-    int mask = 1;
     int i;
     int bit;
     int sigbit = sizeof(int) * 8 - 1;
