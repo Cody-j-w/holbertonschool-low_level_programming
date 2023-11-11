@@ -21,6 +21,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	for (i = 0; i <= sigbit; i++)
 	{
+		printf("current iteration: %d\n", i);
 		bit = (n >> i) & 1;
 		if (i == index)
 			return (bit);
