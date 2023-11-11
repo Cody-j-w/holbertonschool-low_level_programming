@@ -13,8 +13,8 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
-	int bit;
-	int sigbit = sizeof(int) * 16 - 1;
+	unsigned int bit;
+	unsigned int sigbit = sizeof(int) * 16 - 1;
 
 	while (((n >> sigbit) & 1) == 0)
 		sigbit--;
