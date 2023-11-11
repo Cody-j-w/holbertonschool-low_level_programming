@@ -12,7 +12,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i;
+	unsigned int i;
 	int bit;
 	int sigbit = sizeof(int) * 16 - 1;
 
