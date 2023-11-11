@@ -13,14 +13,14 @@
 
 unsigned int flip_bits(unsigned long int x, unsigned long int y)
 {
-    unsigned long int flipped_bits = x ^ y;
-    unsigned int count = 0;
+	unsigned long int flipped_bits = x ^ y;
+	unsigned int count = 0;
 
-    while (flipped_bits > 0)
-    {
-        if (flipped_bits & 1)
-            count++;
-        flipped_bits >>= 1;
-    }
-    return count;
+	while (flipped_bits > 0)
+	{
+		if (flipped_bits & 1)
+			count++;
+		flipped_bits >>= 1;
+	}
+	return count;
 }
