@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+#include "2-get_bit.c"
 
 /**
  * set_bit - set a specified bit of an integer to 1
