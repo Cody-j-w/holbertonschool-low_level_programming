@@ -17,12 +17,10 @@ void print_binary(unsigned long int n)
     while (((n >> sigbit) & 1) == 0)
         sigbit--;
 
-    for (i = 0; i <= sigbit; i++)
+    for (i = sigbit; i >= 0; i--)
     {
-        bit = n & mask;
+        bit = (n >> i) & 1;
 
-        putchar((bit ? 1 : 0) + '0');
-
-        mask <<= 1;
+        putchar(bit + '0');
     }
 }
