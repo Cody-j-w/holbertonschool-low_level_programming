@@ -15,11 +15,10 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
     int mask = 1 << index;
     unsigned long int digit = *n;
-    printf("Number before flipping: %lu\n", digit);
+
     *n = *n ^ mask;
-    printf("Number after flipping: %lu\n", digit);
-    printf("Number after flipping, pointer: %lu\n", *n);
-    if (get_bit(digit, index) == 1)
+
+    if (get_bit(*n, index) == 1)
         return (1);
     return (-1);
 }
