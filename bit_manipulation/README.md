@@ -11,3 +11,7 @@ Prints a base10 integer in a base2 format
 ## get_bit
 
 Gets the value of a particular bit of a particular number
+
+## set_bit
+
+Sets a specified bit to 1
