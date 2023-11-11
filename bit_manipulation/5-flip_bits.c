@@ -7,7 +7,7 @@
  * from x to y
  * @x: the first integer
  * @y: the second integer
- * 
+ *
  * Return: the number of flipped bits
 */
 
