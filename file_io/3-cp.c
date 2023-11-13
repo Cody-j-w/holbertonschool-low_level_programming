@@ -25,32 +25,32 @@ int main(int argc, char *argv[])
 
     if (argc != 3)
     {
-        dprintf(stderr, "Usage: cp file_from file_to\n");
+        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
         exit(97);
     }
     filedes_from = open(argv[1], O_RDONLY);
     filedes_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
     if (filedes_from == -1)
     {
-        dprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
     }
     while (bytes = read(filedes_from, buffer, sizeof(buffer)) > 0)
     {
         if (write(filedes_to, &buffer, bytes) != bytes)
         {
-            dprintf(stderr, "Error: Can't write to %s\n", argv[2]);
+            dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
             exit(99);
         }
     }
     if (close(filedes_from) == -1)
     {
-        dprintf(stderr, "Error: Can't close fd %s\n", filedes_from);
+        dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", filedes_from);
         exit(100);
     }
     if (close(filedes_to) == -1)
     {
-        dprintf(stderr, "Error: Can't close fd %s\n", filedes_to);
+        dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", filedes_to);
         exit(100);
     }
 }
