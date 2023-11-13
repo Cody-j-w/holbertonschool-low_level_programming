@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	}
 	filedes_from = open(argv[1], O_RDONLY);
 	filedes_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (filedes_from == -1 || read(filedes_from, buffer, sizeof(buffer) == -1)
+	if (filedes_from == -1 || read(filedes_from, buffer, sizeof(buffer) == -1))
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
