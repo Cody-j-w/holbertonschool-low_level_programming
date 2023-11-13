@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	filedes = open(filename, O_RDONLY);
-	if (filedes == NULL)
+	if (!filedes)
 		return (0);
 	bytes = read(filedes, buff, letters);
 
