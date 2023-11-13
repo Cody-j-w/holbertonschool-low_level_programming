@@ -37,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	for (i = 0; i < letters && (int)i < bytes; i++)
 	{
-		write(open(stdout, O_WRONLY), &buff[i], 1);
+		write(STDOUT_FILENO, &buff[i], 1);
 	}
 	close(stdout);
 	close(filedes);
