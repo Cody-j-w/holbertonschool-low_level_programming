@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         exit(97);
     }
     filedes_from = open(argv[1], O_RDONLY);
-    filedes_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+    filedes_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
     if (filedes_from == -1)
     {
         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
