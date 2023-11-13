@@ -24,6 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	filedes = open(filename, O_RDONLY);
 	if (!filedes)
+		close(filedes);
 		return (0);
 	bytes = read(filedes, buff, letters);
 
@@ -31,5 +32,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		putchar(buff[i]);
 	}
+	close(filedes);
 	return (bytes);
 }
