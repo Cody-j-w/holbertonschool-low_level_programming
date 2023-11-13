@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
     }
-    while (bytes = read(filedes_from, buffer, sizeof(buffer)) > 0)
+    while ((bytes = read(filedes_from, buffer, sizeof(buffer))) > 0)
     {
         if (write(filedes_to, &buffer, bytes) != bytes)
         {
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
     }
     if (close(filedes_from) == -1)
     {
-        dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", filedes_from);
+        dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filedes_from);
         exit(100);
     }
     if (close(filedes_to) == -1)
     {
-        dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", filedes_to);
+        dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filedes_to);
         exit(100);
     }
 }
