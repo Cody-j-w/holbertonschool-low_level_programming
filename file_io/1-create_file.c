@@ -17,7 +17,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int filedes;
-	int i;
+	unsigned long int i;
 
 	if (filename == NULL)
 		return (-1);
