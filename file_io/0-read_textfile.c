@@ -30,8 +30,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	bytes = read(filedes, buff, letters);
 	if (bytes <= 0)
+	{
 		close(filedes);
 		return (0);
+	}
 
 	for (i = 0; i < letters && (int)i < bytes; i++)
 	{
