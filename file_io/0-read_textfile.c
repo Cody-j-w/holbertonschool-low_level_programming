@@ -34,8 +34,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	for (i = 0; i <= letters && (int)i <= bytes; i++)
 	{
-		putchar(buff[i]);
+		write(1, buff[i], 1);
 	}
 	close(filedes);
-	return (bytes);
+	return (bytes - 1);
 }
