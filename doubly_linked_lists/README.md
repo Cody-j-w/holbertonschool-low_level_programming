@@ -20,3 +20,7 @@ Add a new node to the end of a doubly linked list
 ## free_dlistint
 
 Free a doubly linked list from memory
+
+## get dnodeint_at_index
+
+Returns a node in a doubly linked list at a specified index
