@@ -13,7 +13,7 @@
 size_t print_dlistint(const dlistint_t *head)
 {
 	size_t count = 0;
-	dlistint_t *temp = NULL;
+	const dlistint_t *temp = NULL;
 
 	if (head == NULL)
 		return (0);
