@@ -17,9 +17,9 @@ size_t print_dlistint(const dlistint_t *head)
 
 	if (head == NULL)
 		return (0);
+	temp = *head;
 	if (head->prev != NULL)
 	{
-		temp = head;
 		while (temp->prev != NULL)
 		{
 			temp = temp->prev;
