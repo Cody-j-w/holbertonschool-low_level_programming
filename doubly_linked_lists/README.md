@@ -24,3 +24,7 @@ Free a doubly linked list from memory
 ## get dnodeint_at_index
 
 Returns a node in a doubly linked list at a specified index
+
+## sum_dlistint
+
+Sums the values held in all nodes in the list
