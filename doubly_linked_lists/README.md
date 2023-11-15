@@ -8,3 +8,7 @@ its nodes, returning the number of nodes in the list
 ## dlistint_len
 
 Returns the length of a doubly linked list
+
+## add_dnodeint
+
+Add a new node to the beginning of a doubly linked list
