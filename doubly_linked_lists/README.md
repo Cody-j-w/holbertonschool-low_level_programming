@@ -32,3 +32,7 @@ Sums the values held in all nodes in the list
 ## insert_dnodeint_at_index
 
 Inserts a new node in a doubly linked list at a specified index
+
+## delete_dnodeint_at_index
+
+Deletes a specified node in a doubly linked list
