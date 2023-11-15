@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint - adds a node to the beginning of the linked list
+ * add_dnodeint - adds a node to the beginning of the doubly linked list
  * @head: the head of the existing list
  * @num: the int held in the new node
  *
