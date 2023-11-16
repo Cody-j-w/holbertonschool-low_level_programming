@@ -5,7 +5,7 @@
 /**
  * hash_table_create - creates a new hash table of specified size
  * @size: the size of the new hash table
- * 
+ *
  * Return: the new hash table, or NULL if any part of the process fails
 */
 
@@ -17,7 +17,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!HT)
 		return (NULL);
 	HT->size = size;
-	HT->array = malloc(HT->size * sizeof(hash_node_t*));
+	HT->array = malloc(HT->size * sizeof(hash_node_t *));
 	if (!HT->array)
 		return (NULL);
 
