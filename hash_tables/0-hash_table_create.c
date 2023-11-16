@@ -9,7 +9,7 @@
  * Return: the new hash table, or NULL if any part of the process fails
 */
 
-hash_table_t hash_table_create(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	int i;
 	hash_table_t *HT = malloc(sizeof(hash_table_t));
