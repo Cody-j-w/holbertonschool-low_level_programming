@@ -14,7 +14,7 @@
 
 int hash_table_set(hash_table_t *h, const char *key, const char *value)
 {
-	unsigned long int index = key_index((const unsigned char *)key, h);
+	unsigned long int index = key_index((const unsigned char *)key, h->size);
 	hash_node_t *new_node = malloc(sizeof(hash_node_t));
 	char *node_key = strdup(key);
 	char *node_val = strdup(value);
