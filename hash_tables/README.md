@@ -24,3 +24,7 @@ Get a node's value from a hash table by searching for its key
 ## hash_table_print
 
 Print all key:value pairs in a hash table
+
+## hash_table_delete
+
+Delete a hash table
