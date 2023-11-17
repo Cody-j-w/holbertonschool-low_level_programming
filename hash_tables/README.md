@@ -16,3 +16,7 @@ the specified size
 ## hash_table_set
 
 Set a new node into a hash table
+
+## hash_table_get
+
+Get a node's value from a hash table by searching for its key
