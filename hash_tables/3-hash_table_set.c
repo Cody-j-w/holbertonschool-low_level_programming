@@ -31,6 +31,9 @@ int hash_table_set(hash_table_t *h, const char *key, const char *value)
 
 	if (h->array[index] == NULL || strcmp(key, h->array[index]->key) == 0)
 	{
+		free(h->array[index]->key);
+		free(h->array[index]->value);
+		free(h->array[index]);
 		h->array[index] = new_node;
 		return (1);
 	}
