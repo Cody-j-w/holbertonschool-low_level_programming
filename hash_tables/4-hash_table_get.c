@@ -20,8 +20,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 	index = key_index((const unsigned char *)key, ht->size);
 	temp = ht->array[index];
+	printf("At index: %d\n", index);
 	while (temp != NULL)
 	{
+		printf("Current node's value is: %s\n", temp->value);
 		if (temp->key == key)
 			return (temp->value);
 		temp = temp->next;
