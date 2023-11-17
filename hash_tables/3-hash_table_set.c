@@ -1,0 +1,38 @@
+#include "hash_tables.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * hash_table_set - sets a new node into a hash table
+ * @h: the hash table
+ * @key: the key of the new node
+ * @value: the value of the new node
+ *
+ * Return: 1 on success, 0 on failure
+*/
+
+int hash_table_set(hash_table_t *h, const char *key, const char *value)
+{
+	unsigned long int index = key_index(key);
+	hash_node_t *new_node = malloc(sizeof(hash_node_t));
+	char *node_key = strdup(key);
+	char *node_val = strdup(value);
+	hash_node_t temp = NULL;
+
+	if (!new_node)
+		return (0);
+	new_node->key = node_key;
+	new_node->value = node_val;
+	new_node->next = NULL;
+
+	if (h[index] == NULL)
+	{
+		h[index] = new_node;
+		return (1);
+	}
+	temp = h[index];
+	new_node->next = temp;
+	h[index] = new_node;
+	return (1);
+}

@@ -12,3 +12,7 @@ A hashing function for creating hashes to index the hash table
 
 Using the previous djb2 function, get the index of a key in a hash table of
 the specified size
+
+## hash_table_set
+
+Set a new node into a hash table
