@@ -26,13 +26,13 @@ int hash_table_set(hash_table_t *h, const char *key, const char *value)
 	new_node->value = node_val;
 	new_node->next = NULL;
 
-	if (h[index] == NULL)
+	if (h->array[index] == NULL)
 	{
-		h[index] = new_node;
+		h->array[index] = new_node;
 		return (1);
 	}
-	temp = h[index];
+	temp = h->array[index];
 	new_node->next = temp;
-	h[index] = new_node;
+	h->array[index] = new_node;
 	return (1);
 }
