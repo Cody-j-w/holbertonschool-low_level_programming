@@ -12,7 +12,7 @@
 
 int binary_search(int *arr, size_t size, int value)
 {
-	size_t index, left = 0, right = size - 1;
+	size_t index, left = 0, right = size - 1, i;
 
 	while (left <= right)
 	{
