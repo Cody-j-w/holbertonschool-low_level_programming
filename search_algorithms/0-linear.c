@@ -13,7 +13,7 @@
 
 int linear_search(int *arr, size_t size, int val)
 {
-	int i;
+	size_t i;
 	for (i = 0; i < size; i++)
 	{
 		printf("Value checked array[%d] = [%d]\n", i, arr[i]);
