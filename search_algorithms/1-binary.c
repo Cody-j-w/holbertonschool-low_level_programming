@@ -32,4 +32,5 @@ int binary_search(int *arr, size_t size, int value)
 		else
 			right = index - 1;
 	}
+	return (-1);
 }
